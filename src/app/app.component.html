@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<main>
+  <div class="container">
+    <h1>
+      Welcome to {{title}}!
+    </h1>
+    <p>This is the header block and will be displayed on all pages.</p>
+    <nav>
+      <div class="nav-wrapper">
+        <a routerLink="#!" class="brand-logo">Logo</a>
+        <a routerLink="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a routerLink="retailers">Retailers</a></li>
+          <li><a routerLink="task">Tasks</a></li>
+          <li><a routerLink="bijaya">Bijaya</a></li>
+          <li><a routerLink="collapsible.html">Javascript</a></li>
+          <li><a routerLink="mobile.html">Mobile</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a routerLink="retailers">Retailers</a></li>
+          <li><a routerLink="task">Tasks</a></li>
+          <li><a routerLink="badges.html">Components</a></li>
+          <li><a routerLink="collapsible.html">Javascript</a></li>
+          <li><a routerLink="mobile.html">Mobile</a></li>
+        </ul>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</main>

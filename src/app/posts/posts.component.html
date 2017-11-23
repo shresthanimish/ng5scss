@@ -1,0 +1,18 @@
+<div class="collection">
+  <div class="collection-item"><span class="badge">{{postsLength}}</span>Articles</div>
+</div>
+<div class="row">
+  <div *ngFor="let post of posts" class="col s12">
+    <div class="card light-blue lighten-4 ">
+      <div class="collection">
+        <div class="collection-item light-blue white-text"><span class="badge">{{post.id}}</span>{{post.title | uppercase}}</div>
+      </div>
+      <div class="card-content ">
+        <div [innerHTML]="post.body"></div>
+      </div>
+      <div class="card-action">
+        <a href="#" target="_blank">View Article</a>
+      </div>
+    </div>
+  </div>
+</div>
