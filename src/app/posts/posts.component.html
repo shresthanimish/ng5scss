@@ -1,11 +1,15 @@
 <div class="collection">
-  <div class="collection-item"><span class="badge">{{postsLength}}</span>Articles</div>
+  <div class="collection-item">
+    <span class="badge">{{postsLength}}</span>
+    Posts fetched from
+    <a href="https://jsonplaceholder.typicode.com/posts" target="_blank">https://jsonplaceholder.typicode.com/posts</a>
+  </div>
 </div>
 <div class="row">
   <div *ngFor="let post of posts" class="col s12">
-    <div class="card light-blue lighten-4 ">
+    <div class="card ">
       <div class="collection">
-        <div class="collection-item light-blue white-text"><span class="badge">{{post.id}}</span>{{post.title | uppercase}}</div>
+        <div class="collection-item"><span class="badge">{{post.id}}</span>{{post.title | uppercase}}</div>
       </div>
       <div class="card-content ">
         <div [innerHTML]="post.body"></div>
