@@ -6,6 +6,13 @@
   </div>
 </div>
 <div class="row">
+
+  <div *ngIf="!posts">
+    <div class="progress">
+      <div class="indeterminate"></div>
+    </div>
+  </div>
+
   <div *ngFor="let post of posts" class="col s12">
     <div class="card ">
       <div class="collection">
