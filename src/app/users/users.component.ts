@@ -10,18 +10,19 @@ import 'rxjs/add/operator/switchMap';
 export class UsersComponent implements OnInit {
 
   userid:number;
-  isdetail:false;
+  isdetail:boolean;
 
   constructor(
-      private route: ActivatedRoute
+      // private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
 
-    this.userid = this.route.paramMap.source.value.id;
+    // this.userid = this.route.paramMap.source.value.id;
 
-    if(this.userid)
-        this.isdetail = true;
+    // if(this.userid)
+    //     this.isdetail = true;
+
     
   }
 
